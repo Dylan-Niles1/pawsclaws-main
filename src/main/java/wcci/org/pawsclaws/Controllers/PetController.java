@@ -144,7 +144,7 @@ public class PetController {
         return "Shelter/ViewDetails";
     }
 
-    @PostMapping("adoptPet/{id}")
+    @GetMapping("adoptPet/{id}")
     public String deletePet(@PathVariable long id, Model model) {
         try {
             service.deletePetById(id);
